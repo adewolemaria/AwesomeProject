@@ -7,7 +7,8 @@ import {
   ImageBackground,
   Alert,
   TouchableOpacity,
-  Share
+  Share,
+  Linking
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { Ionicons } from '@expo/vector-icons';
@@ -34,6 +35,7 @@ export class SettingsMenu extends React.Component {
   render() {
     return (
       <View style={styles.buttonRow1}>
+        <Text style={styles.setting_section}>Main</Text>
         <TouchableOpacity
           style={styles.buttonStyles}
           onPress={() => this.props.navigate('')}
@@ -81,9 +83,12 @@ export class SettingsMenu extends React.Component {
             color="#f3f3f3"
           />
         </TouchableOpacity>
+        <Text style={styles.setting_section}>
+          Report a Bug or Ask a Question
+        </Text>
         <TouchableOpacity
           style={styles.buttonStyles}
-          onPress={() => this.props.navigate('')}
+          onPress={() => Linking.openURL('mailto:adewolemayowa@gmail.com')}
         >
           <Ionicons
             name="md-contact"
@@ -111,23 +116,29 @@ export class SettingsMenu extends React.Component {
 
 const styles = StyleSheet.create({
   buttonRow1: {
-    paddingVertical: 40,
+    paddingVertical: 10,
     flex: 2,
     flexDirection: 'column',
-    backgroundColor: '#292929',
+    // backgroundColor: '#F9F9FA',
     color: '#fff'
+  },
+  setting_section: {
+    padding: 20,
+    fontSize: 18,
+    borderColor: '#f3f3f3',
+    borderBottomWidth: 0.5
   },
   buttonText: {
     paddingTop: '3%',
     paddingBottom: '3%',
-    color: '#fff',
+    color: '#424242',
     fontSize: 18,
     width: '85%'
   },
   buttonStyles: {
     height: '8%',
     flexDirection: 'row',
-    backgroundColor: '#3a3434',
+    backgroundColor: '#fff',
     borderColor: '#f3f3f3',
     borderBottomWidth: 0.5
   }

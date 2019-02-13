@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     paddingVertical: 40,
     flex: 2,
     flexDirection: 'column',
-    backgroundColor: '#292929',
     color: '#fff'
   },
   buttonText: {
