@@ -116,14 +116,13 @@ export class SettingsMenu extends React.Component {
 
 const styles = StyleSheet.create({
   buttonRow1: {
-    paddingVertical: 10,
     flex: 2,
     flexDirection: 'column',
     // backgroundColor: '#F9F9FA',
     color: '#fff'
   },
   setting_section: {
-    padding: 20,
+    padding: 30,
     fontSize: 18,
     borderColor: '#f3f3f3',
     borderBottomWidth: 0.5

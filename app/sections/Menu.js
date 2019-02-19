@@ -58,14 +58,16 @@ const styles = StyleSheet.create({
   },
   buttonStyles: {
     shadowColor: 'rgba(222,222,222,0.83)',
-    shadowOffset: { width: 10, height: 10 },
+    shadowOffset: { width: 2, height: 2 },
     shadowOpacity: 0.5,
     backgroundColor: '#fff',
     width: '60%',
-    height: '20%',
+    height: '15%',
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: '5%',
-    borderRadius: 15
+    borderRadius: 15,
+    borderWidth: 1,
+    borderColor: '#c10b57'
   }
 });
