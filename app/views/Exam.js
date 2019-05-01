@@ -26,9 +26,7 @@ const IS_ANDROID = Platform.OS === 'android';
 const ACTIVE_SLIDE = 0;
 
 export class Exam extends React.Component {
-  static navigationOptions = {
-    header: null
-  };
+  static navigationOptions = {};
 
   constructor(props) {
     super(props);

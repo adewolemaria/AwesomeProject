@@ -14,9 +14,7 @@ import { StackNavigator } from 'react-navigation';
 import { Ionicons } from '@expo/vector-icons';
 
 export class SettingsMenu extends React.Component {
-  static navigationOptions = {
-    header: null
-  };
+  static navigationOptions = {};
 
   onClick() {
     Share.share(

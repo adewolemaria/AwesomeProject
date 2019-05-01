@@ -14,7 +14,7 @@ import { SettingsMenu } from '../sections/SettingsMenu.js';
 
 export class Settings extends React.Component {
   static navigationOptions = {
-    header: null
+
   };
 
   render() {

@@ -19,7 +19,7 @@ export class Menu extends React.Component {
       <View style={styles.buttonRow}>
         <TouchableOpacity
           style={styles.buttonStyles}
-          onPress={() => this.props.navigate('QaRT')}
+          onPress={() => this.props.navigate('QuizScreenRT')}
         >
           <Text style={styles.buttonText}>QUIZ</Text>
         </TouchableOpacity>
@@ -31,7 +31,7 @@ export class Menu extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.buttonStyles}
-          onPress={() => this.props.navigate('MultipleChoiceRT')}
+          onPress={() => this.props.navigate('RateAppRT')}
         >
           <Text style={styles.buttonText}>RATE THIS APP</Text>
         </TouchableOpacity>

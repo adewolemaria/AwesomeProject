@@ -9,6 +9,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "base-64": "^0.1.0",
     "expo": "^31.0.2",
     "prop-types": "^15.6.2",
     "react": "16.5.0",
@@ -16,6 +17,7 @@
     "react-native-card-flip": "^1.0.4",
     "react-native-material-cards": "^1.0.9",
     "react-native-progress": "^3.5.0",
+    "react-native-simple-radio-button": "^2.7.3",
     "react-native-snap-carousel": "^3.7.5",
     "react-navigation": "^1.5.11"
   },
